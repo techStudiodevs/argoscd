@@ -4,7 +4,7 @@ metadata:
   name: nodeapp-ui
 spec:
   ports:
-  - port: 8080
+  - port: 9090
     targetPort: 8080
   selector:
     app: nodeapp-ui
