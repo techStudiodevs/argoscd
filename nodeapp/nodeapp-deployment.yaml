@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nodeapp
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: nodeapp-ui
+  template:
+    metadata:
+      labels:
+        app: nodeapp-ui
+    spec:
+      containers:
+      - image: dilio007/nodeapp
+        name: nodeapp-ui
+        ports:
+        - containerPort: 8080
