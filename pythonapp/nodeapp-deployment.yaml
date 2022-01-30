@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pythonapp
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: pythonapp-ui
+  template:
+    metadata:
+      labels:
+        app: pythonapp-ui
+    spec:
+      containers:
+      - image: dilio007/pythonapp
+        name: nodeapp-ui
+        ports:
+        - containerPort: 5500
