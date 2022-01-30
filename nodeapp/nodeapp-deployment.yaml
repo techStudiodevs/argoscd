@@ -14,7 +14,7 @@ spec:
         app: nodeapp-ui
     spec:
       containers:
-      - image: dilio007/nodeapp
+      - image: dilio007/nodeapp:0.0.1
         name: nodeapp-ui
         ports:
         - containerPort: 8080
