@@ -5,7 +5,7 @@ metadata:
 spec:
   ports:
   - port: 8080
-    targetPort: 9090
+    targetPort: 8080
   selector:
     app: nodeapp-ui
   type: LoadBalancer  
