@@ -17,4 +17,4 @@ spec:
       - image: dilio007/pythonapp
         name: pythonapp-ui
         ports:
-        - containerPort: 5500
+        - containerPort: 8080
