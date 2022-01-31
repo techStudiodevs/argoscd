@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - image: dilio007/pythonapp
-        name: nodeapp-ui
+        name: pythonapp-ui
         ports:
         - containerPort: 5500
