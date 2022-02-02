@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nodeapp
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: ffmpeg-server
+  template:
+    metadata:
+      labels:
+        app: ffmpeg-server
+    spec:
+      containers: dilio007/ffmpeg:0.0.1
+      - image: 
+        name: ffmpeg-server
+        ports:
+        - containerPort: 8080
