@@ -14,7 +14,7 @@ spec:
         app: ffmpeg-server
     spec:
       containers: 
-      - image: dilio007/ffmpeg:0.0.3
+      - image: dilio007/ffmpeg:0.0.4
         name: ffmpeg-se
         ports:
         - containerPort: 8080
