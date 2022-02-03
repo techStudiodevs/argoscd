@@ -14,7 +14,7 @@ spec:
         app: ffmpeg-server
     spec:
       containers: 
-      - image: dilio007/ffmpeg:0.0.5
+      - image: arm64v8/alpine
         name: ffmpeg-se
         ports:
         - containerPort: 8080
