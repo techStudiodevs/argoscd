@@ -14,7 +14,7 @@ spec:
         app: ffmpeg-server
     spec:
       containers: 
-      - image: linuxserver/ffmpeg:arm64v8-version-4.4-cli
+      - image: collelog/ffmpeg:4.3.1-alpine-arm64v8
         name: ffmpeg-se
         ports:
         - containerPort: 8080
